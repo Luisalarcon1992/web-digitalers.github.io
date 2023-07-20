@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("../src/fondo2.jpg");
+    background-color: rgba(0, 0, 0, 0, 3);
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+.informacion {
+    text-align: center;
+    margin: 40px;
+    padding: 10px;
+    color: white;
+}
+
+.informacion h1 {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+.informacion h3 {
+    font-size: 2rem;
+    margin: 30px;
+    text-align: justify;
+}
+
+.informacion p {
+    margin: 30px;
+    font-size: 20px;
+}
+
+.maina-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+}
+
+/* Estilos del nav */
+
+.main-nav {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    background-color: #313131;
+}
+
+.img-nav {
+    width: 50px;
+}
+
+.main-nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+.main-nav img {
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+}
+
+.main-nav ul li {
+    padding: 30px;
+}
+
+.main-nav ul li a {
+    color: white;
+    padding: 2px;
+    text-decoration: none;
+}
+
+.main-nav ul li a:hover {
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+}
+
+.main-nav ul.menu-nav {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Parte principal */
+
+.parte-principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 25px;
+}
+
+.parte-principal img {
+    border-radius: 50%;
+    margin-bottom: -30px;
+}
+
+.info {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.cuadro-texto {
+    padding-top: 40px;
+    background-color: rgb(252, 252, 252);
+    border-radius: 5%;
+    width: 300px;
+    min-height: 200px;
+}
+
+.cuadro-texto p {
+    margin-bottom: 15px;
+}
+
+.info a {
+    border-radius: 10%;
+    text-align: center;
+    background-color: rgb(110, 110, 110);
+    color: white;
+    font-size: 20px;
+    padding: 20px 5px;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.info a:hover {
+    font-weight: bold;
+}
+
+
+
+
+/* Footer */
+
+.rrss {
+    margin: 60px;
+}
+
+.rrss p.seguinos {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 5px;
+}
+
+.links-rrss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.links-rrss a {
+    margin: 5px;
+}
+
+.links-rrss a i {
+    font-size: 3rem;
+    margin: 0px 30px;
+    color: white;
+}
+
+.copyright {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Nosotros */
+
+.nosotros p {
+    text-align: left;
+    line-height: 2;
+}
+
+
+/* Formulario */
+
+.class-form,
+.container-form {
+    color: white;
+}
+
+/* Media queries */
+
+@media (max-width: 800px) {
+
+    .main-nav ul.menu-nav {
+        justify-content: left;
+    }
+
+    .main-nav ul li {
+        padding: 1px;
+    }
+
+    .parte-principal {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
+    }
+
+    .parte-principal img {
+        float: none;
+    }
+
+    .parte-principal p {
+        margin: 0px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .parte-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .parte-principal img {
+        float: left;
+        max-width: 100%;
+    }
+
+    .parte-principal p {
+        margin-left: 150px;
+    }
+
+}
